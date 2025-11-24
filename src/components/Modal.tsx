@@ -13,7 +13,7 @@ function Modal({ open, onClose, children }: ModalProps) {
       <div className="bg-(--primary-color) rounded-xl p-6 max-w-lg w-full relative shadow-lg">
         <button
           onClick={onClose}
-          className="absolute top-3 right-4 text-(--secondary-color) text-2xl font-bold"
+          className="absolute top-3 right-4 text-(--secondary-color) text-2xl font-bold cursor-pointer"
         >
           ×
         </button>
