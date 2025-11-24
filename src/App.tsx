@@ -15,7 +15,7 @@ import Wave from './components/Wave';
 import SmoothScroll from './components/SmoothScroll';
 import MentionsLegales from './components/Footer/MentionsLegales';
 import PolitiqueConfidentialite from './components/Footer/PolitiqueConfidentialite';
-
+import NotFound from './components/NotFound';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -77,6 +77,7 @@ return (
         <Route path="/" element={<HomePage />} />
         <Route path="/mentions-legales" element={<MentionsLegales />} />
         <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />
