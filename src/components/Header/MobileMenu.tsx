@@ -25,12 +25,12 @@ function MobileMenu({ open, close }: Props) {
       `}
     >
       <ul className="flex flex-col text-center p-8 mt-10 gap-6 text-(--secondary-color) font-semibold text-xl">
-        <li><a href="#accueil" onClick={close}>Accueil</a></li>
-        <li><a href="#apropos" onClick={close}>À propos</a></li>
-        <li><a href="#prestations" onClick={close}>Prestations</a></li>
-        <li><a href="#cabinet" onClick={close}>Le cabinet</a></li>
-        <li><a href="#faq" onClick={close}>FAQ</a></li>
-        <li><a href="#contact" onClick={close}>Contact</a></li>
+        <li><a href="/#accueil" onClick={close}>Accueil</a></li>
+        <li><a href="/#apropos" onClick={close}>À propos</a></li>
+        <li><a href="/#prestations" onClick={close}>Prestations</a></li>
+        <li><a href="/#cabinet" onClick={close}>Le cabinet</a></li>
+        <li><a href="/#faq" onClick={close}>FAQ</a></li>
+        <li><a href="/#contact" onClick={close}>Contact</a></li>
       </ul>
     </nav>
     </>
