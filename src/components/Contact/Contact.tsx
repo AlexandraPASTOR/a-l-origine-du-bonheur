@@ -11,7 +11,7 @@ function Contact() {
         <section id="contact" className="mb-2 p-4 md:px-10 lg:px-20">
         <h2 className="text-(--secondary-color) text-3xl font-bold py-4">Me contacter</h2>
 
-        <div className="text-center font-semibold flex flex-col gap-2 mt-8">
+        <div className="text-center font-semibold flex flex-col mt-8 gap-2">
         <h3>Une question, un besoin, une envie d'échanger ?</h3>
         <p className="text-sm">Je serais heureuse de vous répondre</p>
 
