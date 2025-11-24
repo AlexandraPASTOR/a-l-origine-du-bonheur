@@ -78,7 +78,7 @@ function ServiceCard({
       )}
 
       <button
-        className="text-(--secondary-color) text-sm mt-3 italic"
+        className="text-(--secondary-color) text-sm mt-3 italic cursor-pointer hover:scale-110 active:translate-y-0.5 transition-all"
         onClick={() => setIsModalOpen(true)}
       >
         En savoir plus
