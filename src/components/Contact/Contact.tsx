@@ -38,7 +38,7 @@ function Contact() {
 
 {/* Bouton */}
 <button type="button" onClick={() => setIsFormOpen(true)}
-        className="block mx-auto w-fit mt-8 bg-(--secondary-color)/90 font-semibold text-(--primary-color) px-6 py-2 rounded-xl shadow-[3px_3px_6px_rgba(0,0,0,0.32)] active:translate-y-0.5 transition-all"
+        className="block mx-auto w-fit mt-8 bg-(--secondary-color)/90 font-semibold text-(--primary-color) px-6 py-2 rounded-xl shadow-[3px_3px_6px_rgba(0,0,0,0.32)] active:translate-y-0.5 transition-all cursor-pointer hover:scale-110"
       >
         Me contacter
       </button>

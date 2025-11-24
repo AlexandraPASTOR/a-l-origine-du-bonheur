@@ -15,29 +15,43 @@ function ContactModal({ open, onClose }: ContactModalProps) {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    // Convert FormData → simple object
-    const data = Object.fromEntries(formData.entries());
+    // 🔑 Clé Web3Forms 
+        const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+    if (!accessKey) {
+      toast.error("Erreur de configuration (clé manquante).");
+      return;
+    }
+    formData.append("access_key", accessKey);
+    formData.append("from_name", "Site À l'origine du bonheur");
+    formData.append("subject", "Nouveau message depuis le site");
+
+    // On convertit en JSON
+    const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
     try {
-      const response = await fetch(
-        "https://formsubmit.co/ajax/pastoralex@free.fr",
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        }
-      );
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
 
-      if (!response.ok) throw new Error("Erreur serveur");
+      const data = await response.json();
 
-      toast.success("Message envoyé avec succès !");
-      form.reset();
-      onClose();
+      if (response.ok && data.success) {
+        toast.success("Message envoyé avec succès !");
+        form.reset();
+        onClose();
+      } else {
+        console.error("Web3Forms error:", data);
+        toast.error("Oups… une erreur est survenue lors de l’envoi.");
+      }
     } catch (error) {
-      toast.error("Oups… Une erreur est survenue.");
+      console.error(error);
+      toast.error("Oups… une erreur est survenue lors de l’envoi.");
     }
   };
 
@@ -51,16 +65,11 @@ function ContactModal({ open, onClose }: ContactModalProps) {
           Laissez-moi un message, je vous répondrai au plus vite.
         </p>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4 text-left">
-          {/* Options FormSubmit envoyées aussi en AJAX */}
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_subject"
-            value="Nouveau message depuis le site"
-          />
-
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-4 text-left"
+        >
+          {/* Champs utilisés dans le mail */}
           <input
             type="text"
             name="name"
