@@ -20,7 +20,7 @@ function ReviewCard({ author, content, rating = 0 }: Review) {
       </h4>
 
       {/* Texte */}
-      <p className="text-xs max-h-[100px] overflow-y-auto px-2">
+      <p className="text-xs max-h-[100px] lg:max-w-[80%] mx-auto overflow-y-auto px-2">
         {content}
       </p>
     </div>

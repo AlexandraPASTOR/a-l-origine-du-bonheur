@@ -33,8 +33,27 @@ h3, h4, p, ul, li, a, button {
   color: #2C9BA1;
 }
 
-/* --- Remove slick arrows default icons --- */
+/* Masquer flèches sur mobile */
+@media (max-width: 1023px) {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
+
+.slick-prev {
+  left: 16px !important;     /* espace intérieur gauche */
+  z-index: 10;
+}
+
+.slick-next {
+  right: 16px !important;    /* espace intérieur droit */
+  z-index: 10;
+}
+
 .slick-prev:before,
 .slick-next:before {
-  display: none;
+  color: var(--secondary-color) !important; 
+  font-size: 20px !important;
 }
+

@@ -6,15 +6,23 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 function Reviews() {
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 400,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true, // visible par défaut (desktop)
+  responsive: [
+    {
+      breakpoint: 1024, // < 1024px (tablettes et mobiles)
+      settings: {
+        arrows: false,
+      },
+    },
+  ],
+};
 
-    const settings = {
-    dots: true,
-    infinite: true,
-    speed: 400,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-  };
 
     return (
         <div className="flex flex-col justify-center bg-(--block-color)/20 rounded-2xl shadow-[3px_3px_6px_rgba(0,0,0,0.32)] mt-12 mb-8 max-h-60 md:w-4/5 lg:w-full mx-auto">

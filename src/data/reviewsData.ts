@@ -26,7 +26,7 @@ export const reviewsData= [
 {
     id: 5,
     author: "Peggy V.",
-    content: "Nous avons fait appel à Tatiana pour un bain enveloppé alors que notre fils n'avait que 18 jours. Ce fut un moment magique et suspendu. Il était totalement apaisé entre les mains de Tatiana grâce à sa douceur, sa gentillesse et son professionnalisme. Et nous l'avons recontactée quelques mois plus tard pour une séance massage. Un moment partagé tout aussi agréable et sympathique. Mille mercis pour ces précieux moments et ces merveilleux souvenirs. Nous recommandons Tatiana sans aucune hésitation.",
+    content: "Nous avons fait appel à Tatiana pour un bain enveloppé alors que notre fils n'avait que 18 jours. Ce fut un moment magique et suspendu. Il était totalement apaisé entre les mains de Tatiana grâce à sa douceur, sa gentillesse et son professionnalisme. Et nous l'avons recontactée quelques mois plus tard pour une séance massage. Un moment partagé tout aussi agréable. Mille mercis pour ces précieux moments et ces merveilleux souvenirs. Nous recommandons Tatiana sans aucune hésitation.",
     rating: 5,
 },
 {
