@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #2C9BA1;
+  --block-color: #A7D9DD;
+  --tertiary-color: #2B2B2B;
+  --font-family: 'Dancing Script', cursive;
+  --font-body: 'Montserrat Alternates', sans-serif;
+}
+
+h1, h2 {
+  font-family: var(--font-family);
+}
+
+h3, h4, p, ul, li, a, button {
+  font-family: var(--font-body);
+}
+
+/* --- CUSTOM SLICK DOTS (points sous la carte) --- */
+/* Les dots doivent apparaître à l'intérieur de la carte */
+.slick-dots {
+  position: absolute !important;
+  bottom: 50px !important;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #2C9BA1;
+}
+
+/* --- Remove slick arrows default icons --- */
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
