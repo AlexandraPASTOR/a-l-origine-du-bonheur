@@ -29,7 +29,7 @@ function MentionsLegales() {
               contact@aloriginedubonheur.fr
             </a><br />
             Statut : Micro-entreprise<br />
-            SIRET : <span className="italic">à compléter</span>
+            SIRET : <span className="italic">948 935 721 00019</span>
           </p>
         </section>
 
