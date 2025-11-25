@@ -64,9 +64,9 @@ function Office () {
 
   
   <img
-    src="/images/cabinet-parking.jpg"
+    src="/cabinet-exterieur.jpg"
     alt="Vue du cabinet de l’extérieur et du parking"
-    className="rounded-xl mt-4 shadow-md"
+    className="rounded-xl mt-4 shadow-md w-1/2 xl:w-72 h-auto mx-auto object-cover"
   />
 </div>
 
