@@ -42,7 +42,7 @@ function ModalDetails({ details }: ModalDetailsProps) {
                 <img
                   src={src}
                   alt="photo soin"
-                  className="rounded-lg w-full max-h-60 md:max-h-80 lg:max-h-100 object-cover"
+                  className="rounded-lg w-full max-h-60 md:max-h-80 lg:max-h-90 object-cover"
                 />
               </div>
             ))}
