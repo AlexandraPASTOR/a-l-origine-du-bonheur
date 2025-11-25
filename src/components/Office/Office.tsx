@@ -46,7 +46,7 @@ function Office () {
 
 
 {/* Encadré adresse */}
-<div className="mt-8 lg:grid gap-10 lg:grid-cols-2">
+<div className="mt-8 lg:grid gap-10 lg:grid-cols-2 items-center">
       <div className="mx-auto w-3/4 md:w-2/3 lg:w-full text-center p-4 rounded-2xl shadow-[3px_3px_6px_rgba(0,0,0,0.32)] border-4 border-(--block-color)/50 xl:px-12">
         <h3 className="text-lg font-semibold text-(--secondary-color) mb-4">
           Où suis-je située ?
