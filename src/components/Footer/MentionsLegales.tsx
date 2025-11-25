@@ -39,7 +39,7 @@ function MentionsLegales() {
             Nom de domaine
           </h2>
           <p className="text-sm leading-relaxed">
-            Nom de domaine : <span className="italic">à compléter (ex. : www.aloriginedubonheur.fr)</span>
+            Nom de domaine : <span className="italic">www.aloriginedubonheur.fr</span>
           </p>
         </section>
 
